@@ -1,0 +1,14 @@
+name: first-action
+on: workflow_dispatch
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first-massage
+        run: echo "hello weclome"
+      - name: mulitiple-massage
+        run: |
+            echo "hello this is first line"
+            echo "this 2nd line"
+            
+       

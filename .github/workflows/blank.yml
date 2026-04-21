@@ -1,5 +1,6 @@
 name: first-action
-on: workflow_dispatch
+on: push:
+  branches: [ main ]  
 jobs:
   first_job:
     runs-on: ubuntu-latest
@@ -10,5 +11,6 @@ jobs:
         run: |
             echo "hello this is first line"
             echo "this 2nd line"
+            echo "this is really good"  
             
        
